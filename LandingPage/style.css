@@ -1,0 +1,172 @@
+*{
+    margin : 0;
+    padding:0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+#main{
+    width: 100%;
+    min-width: 100vh;
+}
+.top{
+    width: 100%;
+    min-height: 80vh;
+    background-image: url("first.jpg");
+    background-size:cover;
+    background-position: center;
+    color: white;
+    font-size: 50px;
+}
+.top h1{
+    font-size: 70px;
+    padding: 20px;
+}
+.top .left  {
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    
+}
+.right {
+    display:grid;
+    height:10px;
+    width: 20px;
+}
+.block {
+    display: inline-block;
+    border: none;
+    color:black;
+    padding: 30px 28px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #d4ba65;
+  }
+  .block:hover {
+    background-color: #de5a1d;
+    color: black;
+  }
+.right .icons {
+    height: 300px;
+    width: 300px;
+    font-size: 40px;
+    align-items:right;
+    padding: 10px 20PX;
+
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+
+}
+.b1{
+width: 30%;
+min-height: inherit;
+background-image: url("popular.jpg");
+background-size: cover;
+background-position: center;
+
+
+}
+.b1 h1{
+    text-align: left;
+    padding: 10px;
+    
+
+}
+.b1 h2{
+    padding: 10px;
+}
+.b1 ul{
+    padding: 10px;
+    list-style: square inside url("sqpurple.gif");
+}
+.b2{
+width: 40%;
+min-height: inherit;
+display: flex;
+flex-wrap: column;
+}
+.b2 .up{
+    width: 100%;
+    min-width: 20vh;
+    background-image: url("food.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align:center;
+    padding: 30px;
+    color: white;
+}
+.b2 .up p{
+    color: white;
+    text-align: right;
+    padding: 15px;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url("spices.avif");
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-width: 20vh;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+.b3{
+width: 30%;
+min-height: inherit;
+background-image: url("last.jpg");
+background-size: cover;
+background-position: center;
+
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width:50%;
+    height:100%;
+    padding: 4vw 3vh; 
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+@media(max-width:500px){
+    .right h1{
+        font-size: 5vh;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+        min-height: 30vh;
+    }
+    .b2{
+        width: 100%;
+    }
+    .b2 up{
+        min-height: 30vh;
+    }
+    .b3{
+        width: 100%;
+        min-height: 30vh;
+        background-position: left;
+    }
+}
